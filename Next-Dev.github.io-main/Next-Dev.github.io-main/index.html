@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="main.js"></script>
+    <title>Next DEV</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark  fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Next DEV</a>
+            <button class="navbar-toggler" type ="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+                <span class="navbar-toggler-icon"> </span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What you will Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Showcase -->
+        <section class="bg-dark text-light p-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1>  Become an <span class="text-warning">
+                            Amazing Programmer
+                        </span></h1>
+                        <p class="lead my-4">
+                            <b>Next DEV </b> bootcamp aims to transform a non-technical person into the next skilled developer with all the necessary skills to get you hired in this thriving field of work. 
+                        </p>
+
+                        <!-- Modal -->
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn-sign-up">Start the Enrollment</button>
+
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <form class="modal-content" action="Next-Dev.github.io-main/scripts/sign-up.php" method="post">
+            <div class="container">
+              <h1 class="modal-text">Start the Enrollment </h1>
+              <p class="modal-text" >Please fill in this form to enroll to the  bootcamp.</p>
+              <hr>
+              
+              <label><b class="modal-text">First Name</b></label>
+              <input type="text" placeholder="Enter your name" name="email" required>
+              
+              
+        
+              <label><b class="modal-text">Last Name</b></label>
+              <input type="text" placeholder="Enter your last name" name="psw" required>
+        
+              <label for="email"><b class="modal-text">Email</b></label>
+              <input type="email" placeholder="Enter your email" name="email" required>
+
+              <label for="phone"><b class="modal-text">Phone</b></label>
+              <input type="tel" placeholder="Enter your phone" name="phone" required>
+              
+              
+        
+              <p class="modal-text">By enrolling to our bootcamp you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+                    </div>
+                    <img class="img-fluid w-50 d-none d-sm-block" src="images/programming.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter -->
+        <section class="bg-primary text-light p-5">
+            <div class="container">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <h3 class="mb-3 mb-md-0">
+                        Sign up for our Newsletter 
+                    </h3>
+                    <form action="scripts/subscribe.php" method="post" class="input-group news-input">
+                        <input type="email" class="form-control" name="email" placeholder="Enter Email" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                        <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Boxes-->
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-laptop"></i> 
+                                </div>
+                                <h3 class="card-title mb-3">
+                                    Virtual
+                                </h3>
+                                <p class="card-text">
+                                    We can attend our bootcamp from whenever you are on our virtual meetings and get help from our online community.
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-person-square" class="icon"></i> 
+                                </div>
+                                <h3 class="card-title mb-3">
+                                    Hybrid
+                                </h3>
+                                <p class="card-text">
+                                    With our Hybrid experience,you can interact face to face with other students and the teachers in our school,but also attend virtually whenever you are not able to come physically.
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-person-fill class="icon""></i> 
+                                </div>
+                                <h3 class="card-title mb-3">
+                                    In person
+                                </h3>
+                                <p class="card-text">
+                                    In person option is the most suitable for those who have a less busy schedule.You will be able to fully immerse yourself in the learning environment with the other present people and the fixed classes that are the same for everyone.
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Learn Sections -->
+        <section id="learn" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="images/coding.svg" class="img-fluids w-100" alt="">
+                        </div>
+                        <div class="col-md p-5">
+                            <h2>Learn the basics</h2>
+                            <p class="lead">
+                                You will get all the basics down about the art of programming from the best people in the industry.
+                            </p>
+                            <p>
+                                Everything is planned so that anyone can start their journey to learn the fundamentals of programming and be job ready
+                            </p>
+                            <a href="#" class="btn btn-light mt-3">
+                                <i class="bi bi-chevron-right"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="p-5 bg-dark text-light">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                        <div class="col-md p-5">
+                            <h2>Learn Web Development</h2>
+                            <p class="lead">
+                                Web development is the biggest field of programming that has more than 20 million developers woldwide.
+                            </p>
+                            <p>
+                                You can build anything on the web from interactive websites to games and full web based applications.  
+                            </p>
+                            <a href="#" class="btn btn-light mt-3">
+                                <i class="bi bi-chevron-right"></i> Read More
+                            </a>
+                        </div>
+                        <div class="col-md">
+                        <img src="images/web-development.svg" class="img-fluids w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Question Acordion -->
+
+        <section id="questions" class="p-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Frequently Asked Questions </h2>
+                <div class="accordion accordion-flush" id="Questions">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#Question-one" 
+                        aria-expanded="false" 
+                        aria-controls="flush-collapseOne">
+                          Where is your location?
+                        </button>
+                      </h2>
+                      <div id="Question-one" 
+                      class="accordion-collapse collapse" 
+                      aria-labelledby="flush-headingOne" 
+                      data-bs-parent="#Question-one">
+                        <div class="accordion-body">
+                            You can find us on:   <br>
+                            50 Main st Boston MA USA
+                        </div>
+                      </div>
+                    </div>
+
+                     <!-- Item 2 -->
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" 
+                          type="button" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#Question-two" 
+                          aria-expanded="false" 
+                          aria-controls="flush-collapseOne">
+                            What I can learn from this Bootcamp?
+                          </button>
+                        </h2>
+                        <div id="Question-two" 
+                        class="accordion-collapse collapse" 
+                        aria-labelledby="flush-headingOne" 
+                        data-bs-parent="#Question-two">
+                          <div class="accordion-body">
+                              We teach: <br>
+                               <b>Front-end development:</b>
+                              <br>
+                              HTML5, CSS3, JavaScript, Bootstrap, Angular, React
+                              <br>
+                              <br>
+                              <b>Back-end development:</b>
+                              <br>
+                              Python, NodeJS, PHP, Java
+                              <br>
+                              <br>
+                              <b>Android Mobile Development:</b>
+                              <br>
+                              Java, Kotlin
+                              <br>
+                              <br>
+                              <b>Database development:</b>
+                              <br>
+                              MySQL, PostgresSQL, MongoDB, Apache Cassandra
+
+                              </div>
+                        </div>
+                      </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" 
+                          type="button" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#Question-three" 
+                          aria-expanded="false" 
+                          aria-controls="flush-collapseOne">
+                            How much does it costs to attend?
+                          </button>
+                        </h2>
+                        <div id="Question-three" 
+                        class="accordion-collapse collapse" 
+                        aria-labelledby="flush-headingOne" 
+                        data-bs-parent="#Question-three">
+                          <div class="accordion-body">
+                              The cost of our bootcamp is free until you get hired,then just getting our part as 30% of the income for a period of 12 months.
+  
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" 
+                          type="button" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#Question-four" 
+                          aria-expanded="false" 
+                          aria-controls="flush-collapseOne">
+                            What prerequisites do i need to know to be able to start?
+                          </button>
+                        </h2>
+                        <div id="Question-four" 
+                        class="accordion-collapse collapse" 
+                        aria-labelledby="flush-headingOne" 
+                        data-bs-parent="#Question-four">
+                          <div class="accordion-body">
+                              The main prerequisites are to have a laptop,internet connection and a burning desire to learn new things.
+                              </div>
+                        </div>
+                      </div>
+                      <!-- Item 5 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" 
+                          type="button" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#Question-five" 
+                          aria-expanded="false" 
+                          aria-controls="flush-collapseOne">
+                            How do I Sign Up?
+                          </button>
+                        </h2>
+                        <div id="Question-five" 
+                        class="accordion-collapse collapse" 
+                        aria-labelledby="flush-headingOne" 
+                        data-bs-parent="#Question-five">
+                          <div class="accordion-body">
+                              You can sign up by going to the Start the Enrollment button at the top and complete the form with all neccessary information to get in touch with you as soon as possible.
+                              </div>
+                        </div>
+                      </div>
+                      <!-- Item 6 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" 
+                          type="button" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#Question-six" 
+                          aria-expanded="false" 
+                          aria-controls="flush-collapseOne">
+                            Do you  help me find a job?
+                          </button>
+                        </h2>
+                        <div id="Question-six" 
+                        class="accordion-collapse collapse" 
+                        aria-labelledby="flush-headingOne" 
+                        data-bs-parent="#Question-six">
+                          <div class="accordion-body">
+                              Our goal is to make as many persons as possible to transition from their present job to this lucrative career in tech.We will help you with everything needed until you are hired.
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Instructors -->
+
+        <section id="instructors" class="p-5 bg-primary">
+            <div class="container">
+                <h2 class="text-center text-white">Our Instructors</h2>
+                <p class="lead text-center text-white mb-5">
+                    Our instructors have 10+ years of experience working as professional software developers.
+                </p>
+            
+                <div class="row g-4" >
+                    <div class="col-md-6 col-lg-3" id="card-1">
+                        <div class="card bg-light">
+
+                            <div class="card body text-center">
+                                <img src="https://randomuser.me/api/portraits/men/20.jpg"  class="rounded-circle mb-3" alt="">
+                                <h3 class="card-title mb-3">Mark Davis</h3>
+                                <p class="card-text ">
+                                    Senior Front-End Developer with 12 years of experience.Worked at Google and Facebook as a Team Lead<br>
+                                    
+                                    
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" id="card-2">
+                        <div class="card bg-light">
+                            <div class="card body text-center">
+                                <img src="https://randomuser.me/api/portraits/men/31.jpg"  class="rounded-circle mb-3" alt="">
+                                <h3 class="card-title mb-3"> Alex Miller</h3>
+                                <p class="card-text ">
+                                    Senior Back-end Developer with 15 years of experience.Worked at Microsoft and Twitter as an project manager.
+                                    <br>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" id="card-3">
+                        <div class="card bg-light">
+                            <div class="card body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/51.jpg"  class="rounded-circle mb-3" alt="">
+                                <h3 class="card-title mb-3">Samantha Bush</h3>
+                                <p class="card-text ">
+                                    Senior Android Mobile Developer with 10 years of experience.Worked at Google and Netflix as A Team Lead
+                                    <br>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" id="card-4">
+                        <div class="card bg-light">
+                            <div class="card body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg"  class="rounded-circle mb-3" alt="">
+                                <h3 class="card-title mb-3">Angela Smith</h3>
+                                <p class="card-text ">
+                                    Senior  DataBase Developer with 15 years of experience.Worked at IBM and Amazon as the main database architect.
+                                    <br>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <!-- Contact -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md">
+                        <h2 class="text-center mb-4"> Contact Info</h2>
+                        <ul class="list-group list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555 
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Student Phone:</span> (333) 333-3333  
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Enrollment Email:</span> enroll@Next-DEV.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-5 bg-dark text-white text-center position-relative"  >
+            <div class="container">
+                <p class="lead">
+                    Copyright &copy; 2023 Next DEV
+                </p>
+                <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h1"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        
+        
+
+
+
+
+        
+        
+        
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+</script>
+</body>
+</html>
